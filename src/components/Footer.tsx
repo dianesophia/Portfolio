@@ -1,7 +1,7 @@
-import { Heart } from "lucide-react";
+
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  
 
   const quickLinks = [
     { name: "Home", href: "#home" },
@@ -12,12 +12,12 @@ const Footer = () => {
     { name: "Contact", href: "#contact" },
   ];
 
-  const scrollToSection = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const scrollToSection = (href: string) => {
+  const element = document.querySelector(href);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
   return (
     <footer className="bg-[#f5f5f5] dark:bg-[#121212] border-t border-gray-300 dark:border-gray-700 mt-20 transition-colors duration-300">
@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#4FC0E8] to-[#2C6C82] flex items-center justify-center text-white font-bold text-lg shadow-md">
+              <div className="w-10 h-10 rounded-full bg-linear-to-r from-[#4FC0E8] to-[#2C6C82] flex items-center justify-center text-white font-bold text-lg shadow-md">
                 DS
               </div>
               <span className="font-heading font-bold text-xl text-gray-900 dark:text-white">

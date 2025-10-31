@@ -12,20 +12,41 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch("http://localhost:5000/send-email", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    // ✅ fix: throw error only if NOT ok
+    if (!res.ok) {
+      throw new Error("Failed to send message. Please try again later.");
+    }
+
     toast.success("Message Sent!", {
       description: "Thank you for reaching out. I'll get back to you soon.",
     });
-    setFormData({ name: "", email: "", message: "" });
-  };
 
-  const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
+    setFormData({ name: "", email: "", message: "" });
+
+  } catch (error) {
+    toast.error("Failed to send message", {
+      description: "Something went wrong. Please try again later.",
+    });
+  }
+};
+
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  setFormData((prev) => ({
+    ...prev,
+    [e.target.name]: e.target.value,
+  }));
+};
 
   return (
     <section
@@ -151,7 +172,7 @@ const Contact = () => {
 
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/diane-sophia-fuentes-2913b6232/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2f2f2f] border border-gray-200 dark:border-gray-700 transition-colors"
@@ -164,14 +185,14 @@ const Contact = () => {
                       LinkedIn
                     </p>
                     <p className="text-xs text-gray-600 dark:text-gray-400">
-                      @yourprofile
+                      @diane-sophia-fuentes
                     </p>
                   </div>
                 </a>
 
                 {/* GitHub */}
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/dianesophia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2f2f2f] border border-gray-200 dark:border-gray-700 transition-colors"
@@ -184,7 +205,7 @@ const Contact = () => {
                       GitHub
                     </p>
                     <p className="text-xs text-gray-600 dark:text-gray-400">
-                      @yourusername
+                      @dianesophia
                     </p>
                   </div>
                 </a>

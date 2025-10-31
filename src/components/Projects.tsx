@@ -11,7 +11,7 @@ const Projects = () => {
   const projects = [
     {
       title: "InspectorBill",
-      description: "Automatically recognizes Philippine currency through image classification. Utilizes a custom-trained ML model powered by OpenCV. Provides an API layer using Flask for model deployment. Performs real-time predictions using camera input.",
+      description: "Automatically recognizes Philippine currency through image classification. Utilizes a custom-trained ML model using YOLOv8 to performs real-time predictions using camera. ",
       image: InspectorBill, 
       tags: ['Python', 'Machine Learning', 'YOLOv8', 'OpenCV'],
       github: "https://github.com/dianesophia/Thesis---Inspector-Bill",
@@ -35,7 +35,7 @@ const Projects = () => {
     },
     {
       title: "Golden Haven Community Portal",
-      description: "Enables residents to receive local announcements and respond to polls. Tracks billing records and payment histories. Allows users to reserve community facilities seamlessly. Implements role-based access for homeowners and administrators. Features a chat system and discussion forum for neighborhood engagement.",
+      description: "A .NET-based portal for local communication, billing, and facility reservations.  Implements role-based access for homeowners and administrators. Features a chat system and discussion forum for neighborhood engagement.",
       image: GoldenHaven,
       tags: ["ASP.NET", "C#", "MySQL", "Razor"],
       github: "https://github.com/dianesophia/Homeowner-App",
