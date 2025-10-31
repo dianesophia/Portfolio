@@ -5,7 +5,7 @@ import InspectorBill from "../assets/inspectorbill.png";
 import Raspberry from "../assets/rasp.png";
 import Fruitveg from "../assets/fruitveg.png";
 import Cooktrition from "../assets/cooktrition.png";
-import GoldenHaven from "../assets/goldenhaven.png";
+import GoldenHaven from "../assets/goldenHaven.png";
 
 const Projects = () => {
   const projects = [
