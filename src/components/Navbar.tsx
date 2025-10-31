@@ -16,13 +16,14 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
-    }
-  };
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+    setIsMobileMenuOpen(false);
+  }
+};
+
 
   const navLinks = [
     { name: "Home", id: "home" },
@@ -45,7 +46,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-14">
           {/* Logo/Brand */}
           <div className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-gradient-to-r from-[#4FC0E8] to-[#2C6C82] rounded-full flex items-center justify-center">
+            <div className="w-9 h-9 bg-linear-to-r from-[#4FC0E8] to-[#2C6C82] rounded-full flex items-center justify-center">
               <span className="text-white font-bold">DS</span>
             </div>
             <span className="text-lg font-semibold text-gray-900 dark:text-white hidden sm:block">
