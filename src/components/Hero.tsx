@@ -2,25 +2,18 @@ import { Button } from "./ui/button";
 import { Download, Mail } from "lucide-react";
 import profileImage from "@/assets/profile-image.png";
 import { useTheme } from "../contexts/ThemeContext";
-import Contact from "./Contact";
 
 
 const Hero = () => {
 
-  const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
-    { name: "Contact", href: "#contact" },
-  ];
-  const scrollToSection = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  
+const scrollToSection = (href: string) => {
+  const element = document.querySelector(href);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 
    const { theme } = useTheme();
 
@@ -63,7 +56,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-36 h-1.5 bg-gradient-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
+              <div className="w-36 h-1.5 bg-linear-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
             </div>
           </div>
           
@@ -85,7 +78,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-36 h-1.5 bg-gradient-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
+              <div className="w-36 h-1.5 bg-linear-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
             </div>
           </div>
           
@@ -107,7 +100,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-36 h-1.5 bg-gradient-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
+              <div className="w-36 h-1.5 bg-linear-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
             </div>
           </div>
           
@@ -129,7 +122,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-36 h-1.5 bg-gradient-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
+              <div className="w-36 h-1.5 bg-linear-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
             </div>
           </div>
           
@@ -151,7 +144,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-36 h-1.5 bg-gradient-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
+              <div className="w-36 h-1.5 bg-linear-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
             </div>
           </div>
           
@@ -174,7 +167,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-36 h-1.5 bg-gradient-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
+              <div className="w-36 h-1.5 bg-linear-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
             </div>
           </div>
           
@@ -203,7 +196,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/50"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-transparent to-background/50"></div>
       </div>
 
       <div className="container mx-auto px-4 -mt-32 relative z-20">
@@ -214,7 +207,7 @@ const Hero = () => {
         >
           <div className="flex flex-col md:flex-row gap-6 items-start">
             {/* Profile Picture */}
-            <div className="relative -mt-24 flex-shrink-0">
+            <div className="relative -mt-24 shrink-0">
               <div
                 className="w-40 h-40 rounded-full border-4 
                            border-white dark:border-[#22272e]
