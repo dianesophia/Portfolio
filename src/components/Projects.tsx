@@ -109,25 +109,35 @@ const Projects = () => {
 
                 {/* Buttons */}
                 <div className="flex gap-2 pt-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 gap-2 border-gray-300 dark:border-gray-600
-                               text-gray-800 dark:text-gray-200 hover:bg-blue-50 
-                               dark:hover:bg-blue-900/20 transition-colors"
-                  >
-                    <Github className="h-4 w-4" />
-                    Code
-                  </Button>
-                  <Button
-                    size="sm"
-                    className="flex-1 gap-2 bg-blue-500 hover:bg-blue-600 
-                               text-white dark:bg-blue-600 dark:hover:bg-blue-500 transition-colors"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    Demo
-                  </Button>
-                </div>
+  {/* GitHub */}
+  <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
+    <Button
+      variant="outline"
+      size="sm"
+      className="w-full gap-2 border-gray-300 dark:border-gray-600
+                 text-gray-800 dark:text-gray-200 hover:bg-blue-50 
+                 dark:hover:bg-blue-900/20 transition-colors"
+    >
+      <Github className="h-4 w-4" />
+      Code
+    </Button>
+  </a>
+
+  {/* Demo only if link exists */}
+  {project.live.trim() !== "" && (
+    <a href={project.live} target="_blank" rel="noopener noreferrer" className="flex-1">
+      <Button
+        size="sm"
+        className="w-full gap-2 bg-blue-500 hover:bg-blue-600 
+                   text-white dark:bg-blue-600 dark:hover:bg-blue-500 transition-colors"
+      >
+        <ExternalLink className="h-4 w-4" />
+        Demo
+      </Button>
+    </a>
+  )}
+</div>
+
               </div>
             </div>
           ))}
