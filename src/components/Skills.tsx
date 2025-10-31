@@ -40,7 +40,7 @@ const skillCategories = [
   {
     category: "Tools & Others",
     icon: GitBranch,
-    skills: ["Git/GitHub", "VS Code", "Figma", "Raspberry Pi 4", "Agile/Scrum"],
+    skills: ["Git/GitHub", "VS Code", "Figma", "Raspberry Pi 4", "Agile/Scrum, Android Studio"],
   }
 ];
 

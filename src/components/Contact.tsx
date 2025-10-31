@@ -12,33 +12,30 @@ const Contact = () => {
     message: "",
   });
 
- const handleSubmit = async (e: React.FormEvent) => {
+const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
   try {
-    const res = await fetch("http://localhost:5000/send-email", {
+    const res = await fetch("/api/sendEmail", {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
 
-    // ✅ fix: throw error only if NOT ok
-    if (!res.ok) {
-      throw new Error("Failed to send message. Please try again later.");
-    }
+    if (!res.ok) throw new Error("Failed to send");
 
     toast.success("Message Sent!", {
       description: "Thank you for reaching out. I'll get back to you soon.",
     });
 
     setFormData({ name: "", email: "", message: "" });
-
   } catch (error) {
     toast.error("Failed to send message", {
       description: "Something went wrong. Please try again later.",
     });
   }
 };
+
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
