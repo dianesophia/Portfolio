@@ -36,7 +36,7 @@ const scrollToSection = (href: string) => {
 
         {/* Scattered Floating Laptops with IDE displays */}
         <div className="absolute inset-0 opacity-25">
-          {/* Laptop 1 - Top Left */}
+              {/* Laptop 1 - Top Left */}
           <div className="absolute top-12 left-16 animate-float" style={{ animationDelay: '0s' }}>
             <div className="relative scale-50">
               <div className="w-32 h-20 bg-card dark:bg-[#1e1e1e] rounded-t border border-primary/30 p-1 overflow-hidden">
@@ -81,9 +81,9 @@ const scrollToSection = (href: string) => {
               <div className="w-36 h-1.5 bg-linear-to-b from-primary/30 to-primary/20 rounded-b border border-t-0 border-primary/30 -mt-0.5"></div>
             </div>
           </div>
-          
-          {/* Laptop 3 - Center */}
-          <div className="absolute top-32 left-1/2 -translate-x-1/2 animate-float" style={{ animationDelay: '0.4s' }}>
+
+          {/* Laptop 3 - Center (hidden on mobile) */}
+          <div className="hidden md:block absolute top-24 md:top-28 lg:top-32 left-1/2 -translate-x-1/2 animate-float" style={{ animationDelay: '0.4s' }}>
             <div className="relative scale-50">
               <div className="w-32 h-20 bg-card dark:bg-[#1e1e1e] rounded-t border border-primary/30 p-1 overflow-hidden">
                 <div className="space-y-0.5 text-[0.3rem] font-mono">
@@ -105,8 +105,8 @@ const scrollToSection = (href: string) => {
           </div>
           
           {/* Laptop 4 - Bottom Left */}
-          <div className="absolute bottom-24 left-32 animate-float" style={{ animationDelay: '1.2s' }}>
-            <div className="relative scale-50">
+          <div className="absolute bottom-16 left-8 sm:bottom-20 sm:left-12 md:bottom-24 md:left-24 lg:left-32 animate-float" style={{ animationDelay: '1.2s' }}>
+            <div className="relative scale-[0.35] md:scale-50">
               <div className="w-32 h-20 bg-card dark:bg-[#1e1e1e] rounded-t border border-primary/30 p-1 overflow-hidden">
                 <div className="space-y-0.5 text-[0.3rem] font-mono">
                   <div className="flex gap-0.5">
@@ -127,8 +127,8 @@ const scrollToSection = (href: string) => {
           </div>
           
           {/* Laptop 5 - Bottom Right */}
-          <div className="absolute bottom-16 right-16 animate-float" style={{ animationDelay: '0.6s' }}>
-            <div className="relative scale-50">
+          <div className="absolute bottom-12 right-6 sm:bottom-16 sm:right-10 md:bottom-20 md:right-20 lg:right-28 animate-float" style={{ animationDelay: '0.6s' }}>
+            <div className="relative scale-[0.35] md:scale-50">
               <div className="w-32 h-20 bg-card dark:bg-[#1e1e1e] rounded-t border border-primary/30 p-1 overflow-hidden">
                 <div className="space-y-0.5 text-[0.3rem] font-mono">
                   <div className="flex gap-0.5">
@@ -148,8 +148,9 @@ const scrollToSection = (href: string) => {
             </div>
           </div>
           
-          {/* Laptop 6 - Middle Right */}
-          <div className="absolute top-40 right-40 animate-float" style={{ animationDelay: '1s' }}>
+            
+          {/* Laptop 6 - Middle Right (hidden on mobile) */}
+          <div className="hidden md:block absolute top-20 right-16 md:right-28 lg:top-24 lg:right-48 animate-float" style={{ animationDelay: '1s' }}>
             <div className="relative scale-50">
               <div className="w-32 h-20 bg-card dark:bg-[#1e1e1e] rounded-t border border-primary/30 p-1 overflow-hidden">
                 <div className="space-y-0.5 text-[0.3rem] font-mono">
@@ -171,8 +172,8 @@ const scrollToSection = (href: string) => {
             </div>
           </div>
           
-          {/* Laptop 7 - Middle Left */}
-          <div className="absolute top-48 left-24 animate-float" style={{ animationDelay: '1.4s' }}>
+          {/* Laptop 7 - Middle Left (hidden on mobile) */}
+          <div className="hidden lg:block absolute top-56 left-4 md:top-64 md:left-8 lg:top-72 lg:left-12 animate-float" style={{ animationDelay: '1.4s' }}>
             <div className="relative scale-50">
               <div className="w-32 h-20 bg-card dark:bg-[#1e1e1e] rounded-t border border-primary/30 p-1 overflow-hidden">
                 <div className="space-y-0.5 text-[0.3rem] font-mono">
