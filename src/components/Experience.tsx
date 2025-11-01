@@ -14,8 +14,7 @@ const Experience = () => {
         "Contributed to a client-based project by developing assigned features using PHP (CodeIgniter).",
         "Developed a responsive, corporate-style website using React.js based on Figma designs.",
         "Learned and applied ERD for database design and collaborated closely with the dev team.",
-        "Gained hands-on experience across multiple roles — including frontend, backend, QA tester, and project",
-      "management — enhancing my understanding of the full software development lifecycle."
+        "Gained hands-on experience across multiple roles — including frontend, backend, QA tester, and project management — enhancing my understanding of the full software development lifecycle."
       ],
       tags: ["React", "JavaScript", "Git", "Node.js", "PHP", "CodeIgniter" , "Figma" , "MySQL" ," Agile" ,"Scrum" ,"Responsive Design","Full Stack" ],
     },
