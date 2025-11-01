@@ -20,7 +20,7 @@ const skillCategories = [
   {
     category: "Backend Development",
     icon: Server,
-    skills: ["Node.js", "Express.js", "RESTful APIs", "Authentication", "Django"]
+    skills: ["Node.js", "Express.js", "RESTful APIs", "Authentication", "Django", "Laravel", "Flask", "ASP.NET", "CodeIgniter"]
   },
   {
     category: "Database",
@@ -30,7 +30,7 @@ const skillCategories = [
   {
     category: "Programming Languages",
     icon: Code2,
-    skills: ["JavaScript", "Python", "Java", "C#", "C"]
+    skills: ["JavaScript", "Python", "Java", "C#", "C", "PHP", "C++" ],
   },
   {
     category: "Machine Learning & AI",
