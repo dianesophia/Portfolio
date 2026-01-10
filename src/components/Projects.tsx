@@ -23,7 +23,7 @@ const Projects = () => {
       image: Raspberry,
       tags: ["Raspberry Pi", "React", "Firebase", "Tailwind CSS", "Python", "Machine Learning", "YOLOv8", "OpenCV"],
       github: "https://github.com/dianesophia/InspectorBill-Live",
-      {/*live: "https://inspector-bill-live.vercel.app/"*/}
+      //live: "https://inspector-bill-live.vercel.app/"
       live: " "
     },
     {
