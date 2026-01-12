@@ -230,7 +230,7 @@ const scrollToSection = (href: string) => {
               </h1>
 
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-4">
-                Computer Science Graduate | Aspiring Software Developer
+                Computer Science Graduate | Aspiring Software Engineer
               </p>
 
               <p className="text-gray-700 dark:text-gray-300 mb-6 max-w-2xl leading-relaxed">
