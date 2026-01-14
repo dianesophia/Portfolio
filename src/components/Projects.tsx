@@ -6,6 +6,7 @@ import Raspberry from "../assets/rasp.png";
 import Fruitveg from "../assets/fruitveg.png";
 import Cooktrition from "../assets/cooktrition.png";
 import GoldenHaven from "../assets/goldenHaven.png";
+import ExpenseTracker from "../assets/expensetracker.png"
 
 const Projects = () => {
   const projects = [
@@ -49,7 +50,15 @@ const Projects = () => {
       tags: ["Python", "Streamlit", "Machine Learning", "TensorFlow", "OpenCV"],
       github: "https://github.com/dianesophia/Fruit-Veg-Recognition-Website",
       live: "https://dsophiafruitvegrecognition.streamlit.app/"
-    }
+    },
+    {
+    title: "Expense Tracker",
+    description: "A full-stack MERN expense tracking application that allows users to record income and expenses, categorize transactions, view spending summaries, and monitor financial activity in real time. Features secure CRUD operations, responsive UI, and MongoDB data persistence.",
+    image: ExpenseTracker,
+    tags: ["MongoDB", "Express", "React", "Node.js", "REST API", "Full Stack"],
+    github: "https://github.com/dianesophia/Expense-Tracker---MERN-Stack",
+    live: ""
+   }
   ];
 
   return (
