@@ -53,7 +53,7 @@ const Projects = () => {
     },
     {
     title: "Expense Tracker",
-    description: "A full-stack MERN expense tracking application that allows users to record income and expenses, categorize transactions, view spending summaries, and monitor financial activity in real time. Features secure CRUD operations, responsive UI, and MongoDB data persistence.",
+    description: "A MERN stack web app for tracking income and expenses, categorizing transactions, and viewing real-time spending summaries.",
     image: ExpenseTracker,
     tags: ["MongoDB", "Express", "React", "Node.js", "REST API", "Full Stack"],
     github: "https://github.com/dianesophia/Expense-Tracker---MERN-Stack",
