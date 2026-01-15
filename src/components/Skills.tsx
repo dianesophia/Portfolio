@@ -30,7 +30,7 @@ const skillCategories = [
   {
     category: "Programming Languages",
     icon: Code2,
-    skills: ["JavaScript", "Python", "Java", "C#", "C", "PHP", "C++" ],
+    skills: ["JavaScript", "Python", "Java", "C#", "C", "PHP" ],
   },
   {
     category: "Machine Learning & AI",
