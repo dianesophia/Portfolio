@@ -3,6 +3,16 @@ import { Badge } from "./ui/badge";
 
 const Experience = () => {
   const experiences = [
+     {
+      title: "Junior Software Engineer",
+      company: "Aquarius Systems Ph",
+      period: "Present",
+      type: "Full Time",
+      description:
+        " ",
+      achievements: [ ],
+      tags: [ ],
+    },
     {
       title: "Full Stack Software Developer Intern",
       company: "MYT Softdev Solutions Inc.",
