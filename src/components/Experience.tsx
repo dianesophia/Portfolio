@@ -117,22 +117,25 @@ const Experience = () => {
               </p>
 
               {/* Achievements */}
-              <div className="space-y-2 mb-4">
-                <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">
-                  Key Achievements:
-                </p>
-                <ul className="space-y-1">
-                  {exp.achievements.map((achievement, i) => (
-                    <li
-                      key={i}
-                      className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2"
-                    >
-                      <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
-                      <span>{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+             {/* Achievements */}
+                {exp.achievements.length > 0 && (
+                  <div className="space-y-2 mb-4">
+                    <p className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+                      Key Achievements:
+                    </p>
+                    <ul className="space-y-1">
+                      {exp.achievements.map((achievement, i) => (
+                        <li
+                          key={i}
+                          className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2"
+                        >
+                          <span className="text-blue-600 dark:text-blue-400 mt-0.5">•</span>
+                          <span>{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2">
