@@ -73,7 +73,7 @@ const Experience = () => {
           </h2>
           <div className="w-16 h-1 bg-blue-500 mx-auto rounded-full"></div>
           <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
-            My journey through internships, academic projects, and contributions to the tech community.
+            My journey through work experience,internships, academic projects, and contributions to the tech community.
           </p>
         </div>
 
