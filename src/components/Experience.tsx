@@ -9,7 +9,7 @@ const Experience = () => {
       period: "Present",
       type: "Full Time",
       description:
-        " ",
+        "Worked on web and mobile application development using .NET, AngularJS, and Flutter. Managed and updated databases using SQL Server, fixed bugs, and implemented new system features in collaboration with the development team.",
       achievements: [ ],
       tags: [ ],
     },
