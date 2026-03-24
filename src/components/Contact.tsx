@@ -57,9 +57,12 @@ const handleSubmit = async (e: React.FormEvent) => {
             Get In Touch
           </h2>
           <div className="w-16 h-1 bg-blue-500 mx-auto rounded-full"></div>
-          <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+          {/* <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
             I'm currently looking for new opportunities. Feel free to reach out
             if you'd like to connect!
+          </p> */}
+          <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+            Feel free to reach out if you'd like to connect!
           </p>
         </div>
 

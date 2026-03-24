@@ -260,7 +260,7 @@ const scrollToSection = (href: string) => {
       className="gap-2 bg-[#f5f5f5] dark:bg-[#121212] dark:text-white"
     >
       <Mail className="h-4 w-4" />
-      Hire Me
+      Contact Me
     </Button>
   
 </div>
