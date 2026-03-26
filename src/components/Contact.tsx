@@ -218,10 +218,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                 Available For
               </h4>
               <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
-                <li className="flex items-center gap-2">
+                {/* <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
                   Full-time opportunities
-                </li>
+                </li> */}
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full"></span>
                   Freelance projects
