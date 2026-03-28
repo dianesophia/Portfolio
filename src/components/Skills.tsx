@@ -14,7 +14,9 @@ const skillCategories = [
       "Tailwind CSS",
       "TypeScript",
       "Next.js",
-      "Responsive Design"
+      "Responsive Design",
+      "Flutter",
+      "Android Studio"
     ]
   },
   {
