@@ -8,7 +8,8 @@ import Cooktrition from "../assets/cooktrition.png";
 import GoldenHaven from "../assets/goldenHaven.png";
 import ExpenseTracker from "../assets/expensetracker.png";
 import Lumasdang from "../assets/lumasdang.png";
-import DealnGo from "../assets/dealnGo.png"
+import DealnGo from "../assets/dealnGo.png";
+import Cook from "../assets/cook.png"
 
 const Projects = () => {
   const projects = [
@@ -40,7 +41,7 @@ const Projects = () => {
     {
       title: "Cooktrition Facts",
       description: "ML-based recipe recommender that provides nutrition facts tailored to dietary needs.",
-      image: Cooktrition,
+      image: Cook,
       tags: ["React Native", "Python", "Machine Learning", "API", "Node.js", "Flask"],
       github: "https://github.com/dianesophia/React_Native_Cooktrition_Facts",
       live: " "
