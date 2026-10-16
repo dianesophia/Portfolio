@@ -7,7 +7,8 @@ import Fruitveg from "../assets/fruitveg.png";
 import Cooktrition from "../assets/cooktrition.png";
 import GoldenHaven from "../assets/goldenHaven.png";
 import ExpenseTracker from "../assets/expensetracker.png";
-import Lumasdang from "../assets/Lumasdang.png";
+import Lumasdang from "../assets/lumasdang.png";
+import DealnGo from "../assets/dealnGo.png"
 
 const Projects = () => {
   const projects = [
@@ -59,6 +60,14 @@ const Projects = () => {
       tags: ["Python", "Streamlit", "Machine Learning", "TensorFlow", "OpenCV"],
       github: "https://github.com/dianesophia/Fruit-Veg-Recognition-Website",
       live: "https://dsophiafruitvegrecognition.streamlit.app/"
+    },
+    {
+      title: " DealnGo Marketplace",
+      description: "A modern and responsive online marketplace in order for users to browse, create, and interact with product listings all in a clean, aesthetic, and accessible interface",
+      image: DealnGo,
+      tags: ["Javascript", "Next.js 14", "Supabase", "Tailwind CSS"],
+      github: "https://github.com/dianesophia/Marketplace-NextJS",
+      live: " "
     },
     {
     title: "Expense Tracker",
