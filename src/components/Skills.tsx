@@ -16,33 +16,37 @@ const skillCategories = [
       "Next.js",
       "Responsive Design",
       "Flutter",
-      "Android Studio"
+      "Razor Pages & MVC",
+      "Blazor",
+      "Angular",
+      "Expo (React Native)",
+      "Vite"
     ]
   },
   {
     category: "Backend Development",
     icon: Server,
-    skills: ["Node.js", "Express.js", "RESTful APIs", "Authentication", "Django", "Laravel", "Flask", "ASP.NET", "CodeIgniter"]
+    skills: ["Node.js", "Express.js", "RESTful APIs", "Authentication", "Django", "Laravel", "Flask", "ASP.NET", "CodeIgniter", "NestJS"]
   },
   {
     category: "Database",
     icon: Database,
-    skills: ["MySQL", "MongoDB", "PostgreSQL", "Firebase", "Supabase"]
+    skills: ["MySQL","Transact-SQL (T-SQL)", "Microsoft SQL Server", "MongoDB", "PostgreSQL", "Firebase", "Supabase"]
   },
   {
     category: "Programming Languages",
     icon: Code2,
-    skills: ["JavaScript", "Python", "Java", "C#", "C", "PHP" ],
+    skills: ["JavaScript","TypeScript", "SQL", "Python", "Java", "C#", "C", "PHP" ],
   },
   {
     category: "Machine Learning & AI",
     icon: Brain,
-     skills: ["YOLOv8", "OpenCV", "TensorFlow (basic)", "scikit-learn (basic)", "pyttsx3", "LabelImg"],
+     skills: ["YOLOv8", "OpenCV", "TensorFlow (basic)", "scikit-learn (basic)", "pyttsx3", "LabelImg","Google Colab", "Roboflow"],
   },
   {
     category: "Tools & Others",
     icon: GitBranch,
-    skills: ["Git/GitHub", "VS Code", "Figma", "Raspberry Pi 4", "Arduino", "Agile/Scrum, Android Studio"],
+    skills: ["Git/GitHub", "VS Code", "Figma", "Raspberry Pi 4", "Arduino", "Agile/Scrum, Android Studio", "Postman (API testing)", "SQL Server Management Studio (SSMS)", "Microsoft Report Builder", "SQL Server Reporting Services (SSRS)", "Asana", "ClickUp"],
   }
 ];
 
