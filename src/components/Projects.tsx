@@ -6,10 +6,19 @@ import Raspberry from "../assets/rasp.png";
 import Fruitveg from "../assets/fruitveg.png";
 import Cooktrition from "../assets/cooktrition.png";
 import GoldenHaven from "../assets/goldenHaven.png";
-import ExpenseTracker from "../assets/expensetracker.png"
+import ExpenseTracker from "../assets/expensetracker.png";
+import Lumasdang from "../assets/Lumasdang.png";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Lumasdang",
+      description: "Lumasdang is an offline-first nutrition and health tracking application designed to help healthcare workers monitor children's nutritional status, manage patient records, and track health assessments, even in areas with limited internet connectivity. ",
+      image: Lumasdang, 
+      tags: ['Flutter', 'Dart', 'Hive', 'Firebase', 'Firebase Hosting'],
+      github: "https://github.com/dianesophia/LUMASDANG",
+      live: "https://lumasdang-8d90d.web.app/"
+    },
     {
       title: "InspectorBill",
       description: "Automatically recognizes Philippine currency through image classification. Utilizes a custom-trained ML model using YOLOv8 to performs real-time predictions using camera. ",
